@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\salih\\Projects\\Apps\\Xo\\DigitalFuse\\server\\API\\API.csproj": {}
+    "C:\\Users\\salih\\Desktop\\df\\server\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\salih\\Projects\\Apps\\Xo\\DigitalFuse\\server\\API\\API.csproj": {
+    "C:\\Users\\salih\\Desktop\\df\\server\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\salih\\Projects\\Apps\\Xo\\DigitalFuse\\server\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\salih\\Desktop\\df\\server\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\salih\\Projects\\Apps\\Xo\\DigitalFuse\\server\\API\\API.csproj",
+        "projectPath": "C:\\Users\\salih\\Desktop\\df\\server\\API\\API.csproj",
         "packagesPath": "C:\\Users\\salih\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\salih\\Projects\\Apps\\Xo\\DigitalFuse\\server\\API\\obj\\",
+        "outputPath": "C:\\Users\\salih\\Desktop\\df\\server\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\salih\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\salih\\Projects\\Apps\\Xo\\DigitalFuse\\server\\Data\\Data.csproj": {
-                "projectPath": "C:\\Users\\salih\\Projects\\Apps\\Xo\\DigitalFuse\\server\\Data\\Data.csproj"
+              "C:\\Users\\salih\\Desktop\\df\\server\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\salih\\Desktop\\df\\server\\Data\\Data.csproj"
               }
             }
           }
@@ -44,6 +44,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "DotNetEnv": {
+              "target": "Package",
+              "version": "[2.5.0, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -92,14 +96,14 @@
         }
       }
     },
-    "C:\\Users\\salih\\Projects\\Apps\\Xo\\DigitalFuse\\server\\Data\\Data.csproj": {
+    "C:\\Users\\salih\\Desktop\\df\\server\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\salih\\Projects\\Apps\\Xo\\DigitalFuse\\server\\Data\\Data.csproj",
+        "projectUniqueName": "C:\\Users\\salih\\Desktop\\df\\server\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "C:\\Users\\salih\\Projects\\Apps\\Xo\\DigitalFuse\\server\\Data\\Data.csproj",
+        "projectPath": "C:\\Users\\salih\\Desktop\\df\\server\\Data\\Data.csproj",
         "packagesPath": "C:\\Users\\salih\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\salih\\Projects\\Apps\\Xo\\DigitalFuse\\server\\Data\\obj\\",
+        "outputPath": "C:\\Users\\salih\\Desktop\\df\\server\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\salih\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -133,6 +137,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.8, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             },
             "Microsoft.Extensions.Identity.Core": {
               "target": "Package",

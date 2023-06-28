@@ -1,9 +1,12 @@
 using Data.Contexts;
+using DotNetEnv;
 using Microsoft.EntityFrameworkCore;
+
+Env.Load();
 
 var builder = WebApplication.CreateBuilder(args);
 
-var connectionString = builder.Configuration.GetConnectionString("LocalDbString");
+var connectionString = builder.Configuration.GetConnectionString("LiveDbString");
 
 // Configure database connections
 builder.Services.AddDbContext<CourseDataContext>(
@@ -20,8 +23,10 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 app.UseHttpsRedirection();
 app.UseCors(options =>
-            options.WithOrigins("*").
-            AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+    options.WithOrigins("*")
+        .AllowAnyOrigin()
+        .AllowAnyMethod()
+        .AllowAnyHeader());
 
 app.UseAuthorization();
 app.MapControllers();

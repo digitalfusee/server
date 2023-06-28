@@ -1337,11 +1337,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\salih\\Projects\\Apps\\Xo\\DigitalFuse\\server\\data\\Data.csproj",
+      "projectUniqueName": "C:\\Users\\salih\\Desktop\\df\\server\\Data\\Data.csproj",
       "projectName": "Data",
-      "projectPath": "C:\\Users\\salih\\Projects\\Apps\\Xo\\DigitalFuse\\server\\data\\Data.csproj",
+      "projectPath": "C:\\Users\\salih\\Desktop\\df\\server\\Data\\Data.csproj",
       "packagesPath": "C:\\Users\\salih\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\salih\\Projects\\Apps\\Xo\\DigitalFuse\\server\\data\\obj\\",
+      "outputPath": "C:\\Users\\salih\\Desktop\\df\\server\\Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\salih\\AppData\\Roaming\\NuGet\\NuGet.Config",
