@@ -1,0 +1,42 @@
+version: "3.4"
+
+networks:
+  dev:
+    driver: bridge
+
+services:
+  api:
+    image: ${DOCKER_REGISTRY-}api
+    depends_on:
+      - "digital_fuse"
+    container_name: df-services
+    ports:
+      - "8088:80"
+      - "8443:443" # Add port mapping for HTTPS
+    build:
+      context: .
+      dockerfile: API/Dockerfile
+    environment:
+      - ConnectionStrings__LocalDbString=User Id=postgres;Password=pg123;Server=digital_fuse;Port=5432;Database=df_sample;IntegratedSecurity=True;Pooling=True;
+      - ASPNETCORE_URLS=https://+:443;http://+:80 # Update to use HTTPS and HTTP
+      - ASPNETCORE_HTTPS_PORT=8443 # Specify the HTTPS port
+    networks:
+      - dev
+
+  digital_fuse:
+    image: postgres:latest
+    container_name: digital_fuse
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=pg123
+      - POSTGRES_DB=df_sample
+    ports:
+      - "5433:5432"
+    restart: always
+    volumes:
+      - digital_fuse:/var/lib/postgresql/data
+    networks:
+      - dev
+
+volumes:
+  digital_fuse:

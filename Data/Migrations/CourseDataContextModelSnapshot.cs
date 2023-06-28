@@ -19,7 +19,7 @@ namespace Data.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "7.0.3")
+                .HasAnnotation("ProductVersion", "7.0.8")
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
             NpgsqlModelBuilderExtensions.UseSerialColumns(modelBuilder);
@@ -39,7 +39,7 @@ namespace Data.Migrations
                         .HasColumnName("category");
 
                     b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("timestamp without time zone")
+                        .HasColumnType("timestamp with time zone")
                         .HasColumnName("created_at");
 
                     b.Property<string>("Description")
@@ -72,7 +72,7 @@ namespace Data.Migrations
                         .HasColumnName("title");
 
                     b.Property<DateTime?>("UpdatedAt")
-                        .HasColumnType("timestamp without time zone")
+                        .HasColumnType("timestamp with time zone")
                         .HasColumnName("updated_at");
 
                     b.HasKey("Id");
@@ -115,7 +115,7 @@ namespace Data.Migrations
                         .HasColumnName("country");
 
                     b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("timestamp without time zone")
+                        .HasColumnType("timestamp with time zone")
                         .HasColumnName("created_at");
 
                     b.Property<string>("Email")
@@ -175,11 +175,11 @@ namespace Data.Migrations
                         .HasColumnName("province");
 
                     b.Property<DateTime?>("ResetTokenExpires")
-                        .HasColumnType("timestamp without time zone")
+                        .HasColumnType("timestamp with time zone")
                         .HasColumnName("reset_token_expires");
 
                     b.Property<DateTime?>("UpdatedAt")
-                        .HasColumnType("timestamp without time zone")
+                        .HasColumnType("timestamp with time zone")
                         .HasColumnName("updated_at");
 
                     b.Property<string>("Username")
@@ -193,7 +193,7 @@ namespace Data.Migrations
                         .HasColumnName("verification_token");
 
                     b.Property<DateTime?>("VerifiedAt")
-                        .HasColumnType("timestamp without time zone")
+                        .HasColumnType("timestamp with time zone")
                         .HasColumnName("verified_at");
 
                     b.Property<string>("Website")
@@ -220,7 +220,7 @@ namespace Data.Migrations
                         .HasColumnName("choices");
 
                     b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("timestamp without time zone")
+                        .HasColumnType("timestamp with time zone")
                         .HasColumnName("created_at");
 
                     b.Property<string>("QuestionText")
@@ -234,7 +234,7 @@ namespace Data.Migrations
                         .HasColumnName("quiz_id");
 
                     b.Property<DateTime?>("UpdatedAt")
-                        .HasColumnType("timestamp without time zone")
+                        .HasColumnType("timestamp with time zone")
                         .HasColumnName("updated_at");
 
                     b.HasKey("Id");
@@ -258,7 +258,7 @@ namespace Data.Migrations
                         .HasColumnName("course_id");
 
                     b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("timestamp without time zone")
+                        .HasColumnType("timestamp with time zone")
                         .HasColumnName("created_at");
 
                     b.Property<string>("Description")
@@ -274,7 +274,7 @@ namespace Data.Migrations
                         .HasColumnName("title");
 
                     b.Property<DateTime?>("UpdatedAt")
-                        .HasColumnType("timestamp without time zone")
+                        .HasColumnType("timestamp with time zone")
                         .HasColumnName("updated_at");
 
                     b.HasKey("Id");
@@ -298,7 +298,7 @@ namespace Data.Migrations
                         .HasColumnName("course_id");
 
                     b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("timestamp without time zone")
+                        .HasColumnType("timestamp with time zone")
                         .HasColumnName("created_at");
 
                     b.Property<string>("Description")
@@ -319,7 +319,7 @@ namespace Data.Migrations
                         .HasColumnName("title");
 
                     b.Property<DateTime?>("UpdatedAt")
-                        .HasColumnType("timestamp without time zone")
+                        .HasColumnType("timestamp with time zone")
                         .HasColumnName("updated_at");
 
                     b.Property<string>("VideoURL")

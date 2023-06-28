@@ -3,9 +3,11 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
+var connectionString = builder.Configuration.GetConnectionString("LocalDbString");
+
 // Configure database connections
 builder.Services.AddDbContext<CourseDataContext>(
-    options => options.UseNpgsql(builder.Configuration.GetConnectionString("LocalDbString")));
+    options => options.UseNpgsql(connectionString));
 
 // For InvalidCastException
 AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);

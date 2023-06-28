@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\salih\\Projects\\Apps\\DigitalFuse\\server\\Data\\Data.csproj": {}
+    "C:\\Users\\salih\\Projects\\Apps\\Xo\\DigitalFuse\\server\\data\\Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\salih\\Projects\\Apps\\DigitalFuse\\server\\Data\\Data.csproj": {
+    "C:\\Users\\salih\\Projects\\Apps\\Xo\\DigitalFuse\\server\\data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\salih\\Projects\\Apps\\DigitalFuse\\server\\Data\\Data.csproj",
+        "projectUniqueName": "C:\\Users\\salih\\Projects\\Apps\\Xo\\DigitalFuse\\server\\data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "C:\\Users\\salih\\Projects\\Apps\\DigitalFuse\\server\\Data\\Data.csproj",
+        "projectPath": "C:\\Users\\salih\\Projects\\Apps\\Xo\\DigitalFuse\\server\\data\\Data.csproj",
         "packagesPath": "C:\\Users\\salih\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\salih\\Projects\\Apps\\DigitalFuse\\server\\Data\\obj\\",
+        "outputPath": "C:\\Users\\salih\\Projects\\Apps\\Xo\\DigitalFuse\\server\\data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\salih\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -44,15 +44,19 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.3, )"
+              "version": "[7.0.8, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             },
             "Microsoft.Extensions.Identity.Core": {
               "target": "Package",
-              "version": "[7.0.3, )"
+              "version": "[7.0.8, )"
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
-              "version": "[7.0.3, )"
+              "version": "[7.0.4, )"
             }
           },
           "imports": [
